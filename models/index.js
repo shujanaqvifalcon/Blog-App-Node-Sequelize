@@ -1,0 +1,2 @@
+require("./Users")
+require("./Articles")
