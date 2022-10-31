@@ -1,4 +1,4 @@
-# Node-JS Boilerplate
+#  Real World Problem Node Js + Sequelize
 
 Installation steps to run server locally
 
