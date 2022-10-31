@@ -1,6 +1,6 @@
 /**
  * All the validation
- * @author Yousuf Kalim
+ * @author Shuja Naqvi
  */
 const { check, validationResult } = require('express-validator');
 

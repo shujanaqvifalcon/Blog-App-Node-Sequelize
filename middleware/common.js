@@ -1,6 +1,6 @@
 /**
  * Common middleware that we have to use by default every time
- * @author Yousuf Kalim
+ * @author Shuja Naqvi
  */
 const express = require('express');
 const logger = require('morgan');

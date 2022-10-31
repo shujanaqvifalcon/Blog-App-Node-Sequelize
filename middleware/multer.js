@@ -1,6 +1,6 @@
 /**
  * Multer strategy to upload images
- * @author Yousuf Kalim
+ * @author Shuja Naqvi
  */
 const multer = require('multer');
 

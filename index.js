@@ -1,5 +1,5 @@
 /**
- * Node-JS Boilerplate
+ * Blog-App
  * @author Shuja Naqvi
  */
  require('dotenv').config();
