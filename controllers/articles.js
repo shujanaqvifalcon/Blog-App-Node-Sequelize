@@ -18,8 +18,8 @@
      return res.status(404).json({ success: false, message: 'Author Id is Invalid' });
      }
     const article = await Article.create(req.body);
-    author.tblArticleId=article.id
-    await author.save()
+    // author.tblArticleId=article.id
+    // await author.save()
      // Done
      res.json({ success: true, article }); //Success
    } catch (err) {

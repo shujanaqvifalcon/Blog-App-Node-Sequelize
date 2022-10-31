@@ -28,17 +28,8 @@ db.sequelize
     const Users=require("./models/Users")
     const Articles=require("./models/Articles")
     const Comments =require("./models/Comments")
-    //This will Create a relation which is User has Many articles 
-    //This will create Array of table_articles inside user's schema
     Users.hasMany(Articles , {foreignKey: 'authorId',sourceKey: 'id'});
-    //This will Create a relation which is One article Belongs to a single user
-    //each article will have a user 
-    Articles.hasOne(Users);
     Articles.belongsTo(Users , {foreignKey: 'authorId',targetKey: 'id'});
-
-    //This will Create a relation which is Comment  has One article
-    Comments.hasOne(Articles);
-   
     Articles.hasMany(Comments , {foreignKey: 'articleId',sourceKey: 'id'});
     Comments.belongsTo(Articles,{foreignKey: 'articleId',targetKey: 'id'})
     Users.hasMany(Comments , {foreignKey: 'authorId',sourceKey: 'id'});

@@ -20,10 +20,10 @@
      return res.status(404).json({ success: false, message: 'Author Id || author is Invalid' });
      }
     const comment = await Comments.create(req.body);
-    article.tblCommentId=comment.id
-    author.tblCommentId=comment.id
-    await article.save()
-    await author.save()
+    // article.tblCommentId=comment.id
+    // author.tblCommentId=comment.id
+    // await article.save()
+    // await author.save()
      // Done
      res.json({ success: true, comment }); //Success
    } catch (err) {
