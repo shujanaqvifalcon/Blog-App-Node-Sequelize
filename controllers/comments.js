@@ -68,7 +68,8 @@
  exports.getById = async (req, res) => {
    try {
      const {commentId}=req.params
-     const comment=await Comments.findByPk(commentId,{include: [
+     const comment=await Comments.findByPk(commentId,
+      {include: [
       {
          model: sequelize.model('tbl_users'),
         
